@@ -6,7 +6,7 @@
     "node": "6.11.x"
   },
   "scripts": {
-    "start": "babel-node --presets es2015 server/server.js",
+    "start": "babel-node --presets es2015 ./server",
     "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "cacheDirectories": [
