@@ -1,13 +1,14 @@
 import Express from 'express';
 import path from 'path';
 import { Sequelize } from 'sequelize';
+import bodyParser from 'body-parser';
 
 const app = new Express();
 const PORT = process.env.PORT || 5000;
 
 // Priority serve any static files.
 app.use(Express.static(path.resolve(__dirname, '../react-ui/build')));
-
+app.use(bodyParser.json());
 // ========================
 //  API
 // ========================

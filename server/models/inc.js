@@ -6,9 +6,6 @@ var inc = {
         primaryKey: true,
         autoIncrement: true,
     },
-    time:{
-        type: DataTypes.TIME,
-    },
     humidity: {
         type: DataTypes.TINYINT,
     },
